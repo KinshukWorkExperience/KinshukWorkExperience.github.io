@@ -1,12 +1,80 @@
 <!DOCTYPE html>
     <head>
-        <meta 
+        <meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
         <title>Work Experience Project</title>
-        <link rel="stylesheet" type="text/css" href = "stylesheet.css"/>
+        <!--<link rel="stylesheet" type="text/css" href = "stylesheet.css"/>-->
+
+        <style>
+                        
+            .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #e0d6d5;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            }
+
+            .sidenav a {
+            padding: 8px 8px 8px 32px;
+            display: block;
+            transition: 0.3s;
+            }
+
+            .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            font-size: 36px;
+            margin-left: 10px;
+            }
+
+        </style>
+
+        <script>
+            var OpenNav = function() {
+                document.getElementById("Sidenav").style.width = "250px";
+            }
+
+            var CloseNav = function() {
+                document.getElementById("Sidenav").style.width = "0";
+            }
+        </script>
+
     </head>
 
     <body>
-        <button> Test Button </button>
+        <div class="w3-bar w3-theme">
+            <a class="w3-bar-item w3-button w3-theme" href="#" onclick = "OpenNav()" ><i class="fa fa-bars"></i></a>
+            <span class="w3-bar-item">asfasdtitleuasdua</span>
+        </div>
+
+        <div id="Sidenav" class="sidenav w3-bar-item w3-theme" class>
+                <a class="w3-bar-item w3-theme" href="#" onclick = "CloseNav()" ><i class="fa fa-bars closebtn"></i></a>
+                <!--<a href="javascript:void(0)" class="closebtn" onclick="CloseNav()">&times;</a>-->
+                <a href="#" class="w3-button">Landing</a>
+                <a href="#" class="w3-button">Test Game</a>
+                <a href="#" class="w3-button">WIP</a>
+                <a href="#" class="w3-button">WIP</a>
+        </div>
+
+        <div class="w3-third w3-section">
+            <div class="w3-card-4">
+            <img src="Mechanical.webp" height="10%" width="100%">
+            <div class="w3-container w3-white">
+            <h4>Glorious mechanical keyboard</h4>
+            <p>If you don't use a mechanical keyboard you're uncultured and you can't even imagine even the slightest satisfaction of bestowing your hands upon one, and pressing the button gently to have an electric shock of accomplishment.</p>
+            </div>
+            </div>
+        </div>
     </body>
 </html>
