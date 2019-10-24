@@ -1,3 +1,23 @@
+class Apple { 
+	constructor() {
+		this.Test = 20; 
+    }
+
+    def() {
+        function f() {
+            return ++this.Test;
+        }
+        return f()
+    }
+
+	arrow() {
+        let a = () => ++this.Test;
+		return a();
+    }
+}
+
+var Fruit = new Apple();
+console.log(Fruit.arrow());
 
 function CreateQuestion(Question, Answers) {
     let Message = document.createElement("P");
@@ -11,9 +31,10 @@ function CreateQuestion(Question, Answers) {
         Message.appendChild(Label);
 
         let NewLine = document.createElement("BR");
-        Label.appendChild(NewLine);
+        Label.appendChild(NewLine); 
 
         let Radio = document.createElement("INPUT");
+        Radio.setAttribute("CLASS", "with-gap");
         Radio.setAttribute("TYPE", "radio");
         Radio.setAttribute("NAME", Question);
 
